@@ -135,20 +135,24 @@
 			]
 		},
 		{
-			"id": "i7",
-			"name": "Trompete ın F I",
+			"id": "i18",
+			"name": "Trompete in F",
 			"abbr": "",
 			"grand": false,
 			"parts": [
+				{
+					"name": "I"
+				},
 				{
 					"name": "II"
 				}
 			],
 			"staves": [
 				{
-					"id": "i7-1",
+					"id": "i18-2",
 					"parts": [
-						0
+						0,
+						1
 					]
 				}
 			]
@@ -383,7 +387,7 @@
 					"uly": 1629,
 					"lrx": 2337,
 					"lry": 1701,
-					"staff": "i7-1"
+					"staff": "i18-2"
 				},
 				{
 					"ulx": 484,
