@@ -164,14 +164,22 @@
 			"grand": false,
 			"parts": [
 				{
+					"name": "I"
+				},
+				{
 					"name": "II"
+				},
+				{
+					"name": "III"
 				}
 			],
 			"staves": [
 				{
-					"id": "i8-1",
+					"id": "i8-2",
 					"parts": [
-						0
+						0,
+						1,
+						2
 					]
 				}
 			]
@@ -278,6 +286,19 @@
 			"staves": [
 				{
 					"id": "i15-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i19",
+			"name": "Kontrabass",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i19-1",
 					"parts": []
 				}
 			]
@@ -394,7 +415,7 @@
 					"uly": 1791,
 					"lrx": 2337,
 					"lry": 1866,
-					"staff": "i8-1"
+					"staff": "i8-2"
 				},
 				{
 					"ulx": 478,
@@ -456,7 +477,8 @@
 					"ulx": 495,
 					"uly": 3117,
 					"lrx": 2336,
-					"lry": 3185
+					"lry": 3185,
+					"staff": "i19-1"
 				}
 			],
 			"grandstaves": []
