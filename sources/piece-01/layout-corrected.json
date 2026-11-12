@@ -1,6 +1,256 @@
 {
 	"note": "Corrected layout boxes, in the page image's pixel space. The measure zones in score.mei are the measure boxes grown by a margin.",
-	"instruments": [],
+	"instruments": [
+		{
+			"id": "i1",
+			"name": "Flöte",
+			"abbr": "",
+			"grand": false,
+			"parts": [
+				{
+					"name": "I"
+				},
+				{
+					"name": "II"
+				}
+			],
+			"staves": [
+				{
+					"id": "i1-1",
+					"parts": [
+						0
+					]
+				},
+				{
+					"id": "i1-2",
+					"parts": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"id": "i2",
+			"name": "Oboe I!",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i2-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i3",
+			"name": "Klarinette in A",
+			"abbr": "",
+			"grand": false,
+			"parts": [
+				{
+					"name": "II"
+				}
+			],
+			"staves": [
+				{
+					"id": "i3-1",
+					"parts": [
+						0
+					]
+				}
+			]
+		},
+		{
+			"id": "i4",
+			"name": "Fagott I",
+			"abbr": "",
+			"grand": false,
+			"parts": [
+				{
+					"name": "II"
+				}
+			],
+			"staves": [
+				{
+					"id": "i4-1",
+					"parts": [
+						0
+					]
+				}
+			]
+		},
+		{
+			"id": "i5",
+			"name": "I Hom ın F",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i5-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i6",
+			"name": "II",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i6-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i7",
+			"name": "Trompete ın F I",
+			"abbr": "",
+			"grand": false,
+			"parts": [
+				{
+					"name": "II"
+				}
+			],
+			"staves": [
+				{
+					"id": "i7-1",
+					"parts": [
+						0
+					]
+				}
+			]
+		},
+		{
+			"id": "i8",
+			"name": "Posaune",
+			"abbr": "",
+			"grand": false,
+			"parts": [
+				{
+					"name": "II"
+				}
+			],
+			"staves": [
+				{
+					"id": "i8-1",
+					"parts": [
+						0
+					]
+				}
+			]
+		},
+		{
+			"id": "i9",
+			"name": "Pauken in A, e",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i9-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i10",
+			"name": "Kleine Trommel",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i10-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i11",
+			"name": "Große Trommel",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i11-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i12",
+			"name": "Glocke in E",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i12-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i13",
+			"name": "Violine",
+			"abbr": "",
+			"grand": false,
+			"parts": [
+				{
+					"name": "I"
+				},
+				{
+					"name": "II"
+				}
+			],
+			"staves": [
+				{
+					"id": "i13-1",
+					"parts": [
+						0
+					]
+				},
+				{
+					"id": "i13-2",
+					"parts": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"id": "i14",
+			"name": "Viola",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i14-1",
+					"parts": []
+				}
+			]
+		},
+		{
+			"id": "i15",
+			"name": "Violoncello",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i15-1",
+					"parts": []
+				}
+			]
+		}
+	],
 	"groups": [],
 	"instrumentsFixed": false,
 	"pages": [
@@ -55,103 +305,120 @@
 					"ulx": 477,
 					"uly": 598,
 					"lrx": 2334,
-					"lry": 662
+					"lry": 662,
+					"staff": "i1-1"
 				},
 				{
 					"ulx": 475,
 					"uly": 729,
 					"lrx": 2336,
-					"lry": 795
+					"lry": 795,
+					"staff": "i1-2"
 				},
 				{
 					"ulx": 477,
 					"uly": 883,
 					"lrx": 2336,
-					"lry": 962
+					"lry": 962,
+					"staff": "i2-1"
 				},
 				{
 					"ulx": 474,
 					"uly": 1032,
 					"lrx": 2336,
-					"lry": 1116
+					"lry": 1116,
+					"staff": "i3-1"
 				},
 				{
 					"ulx": 489,
 					"uly": 1204,
 					"lrx": 2339,
-					"lry": 1266
+					"lry": 1266,
+					"staff": "i4-1"
 				},
 				{
 					"ulx": 464,
 					"uly": 1349,
 					"lrx": 2335,
-					"lry": 1424
+					"lry": 1424,
+					"staff": "i5-1"
 				},
 				{
 					"ulx": 473,
 					"uly": 1477,
 					"lrx": 2335,
-					"lry": 1544
+					"lry": 1544,
+					"staff": "i6-1"
 				},
 				{
 					"ulx": 473,
 					"uly": 1629,
 					"lrx": 2337,
-					"lry": 1701
+					"lry": 1701,
+					"staff": "i7-1"
 				},
 				{
 					"ulx": 484,
 					"uly": 1791,
 					"lrx": 2337,
-					"lry": 1866
+					"lry": 1866,
+					"staff": "i8-1"
 				},
 				{
 					"ulx": 478,
 					"uly": 1951,
 					"lrx": 2339,
-					"lry": 2024
+					"lry": 2024,
+					"staff": "i9-1"
 				},
 				{
 					"ulx": 475,
 					"uly": 2068,
 					"lrx": 2335,
-					"lry": 2139
+					"lry": 2139,
+					"staff": "i10-1"
 				},
 				{
 					"ulx": 476,
 					"uly": 2159,
 					"lrx": 2337,
-					"lry": 2230
+					"lry": 2230,
+					"staff": "i11-1"
 				},
 				{
 					"ulx": 475,
 					"uly": 2261,
 					"lrx": 2336,
-					"lry": 2330
+					"lry": 2330,
+					"staff": "i12-1"
 				},
 				{
 					"ulx": 480,
 					"uly": 2510,
 					"lrx": 2335,
-					"lry": 2575
+					"lry": 2575,
+					"staff": "i13-1"
 				},
 				{
 					"ulx": 476,
 					"uly": 2641,
 					"lrx": 2340,
-					"lry": 2715
+					"lry": 2715,
+					"staff": "i13-2"
 				},
 				{
 					"ulx": 477,
 					"uly": 2811,
 					"lrx": 2338,
-					"lry": 2896
+					"lry": 2896,
+					"staff": "i14-1"
 				},
 				{
 					"ulx": 477,
 					"uly": 2970,
 					"lrx": 2338,
-					"lry": 3047
+					"lry": 3047,
+					"staff": "i15-1"
 				},
 				{
 					"ulx": 495,
@@ -468,12 +735,6 @@
 					"lry": 3264
 				},
 				{
-					"ulx": 1114,
-					"uly": 1652,
-					"lrx": 1425,
-					"lry": 2677
-				},
-				{
 					"ulx": 1116,
 					"uly": 1649,
 					"lrx": 1429,
@@ -483,13 +744,7 @@
 					"ulx": 1445,
 					"uly": 1646,
 					"lrx": 1704,
-					"lry": 2705
-				},
-				{
-					"ulx": 1447,
-					"uly": 1647,
-					"lrx": 1703,
-					"lry": 3278
+					"lry": 3252
 				},
 				{
 					"ulx": 1714,
