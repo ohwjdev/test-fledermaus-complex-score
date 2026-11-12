@@ -173,12 +173,11 @@
                            <label xml:id="label-27">Violine I</label>
                            <instrDef xml:id="instrDef-14"/>
                            <layerDef xml:id="layerDef-21" n="1" label="I"/>
-                           <layerDef xml:id="layerDef-22" n="2" label="II"/>
                         </staffDef>
                         <staffDef xml:id="i13-staff2" n="15" lines="5" clef.shape="G" clef.line="2" meter.count="2" meter.unit="2">
                            <label xml:id="label-28">Violine II</label>
                            <instrDef xml:id="instrDef-15"/>
-                           <layerDef xml:id="layerDef-23" n="2" label="II"/>
+                           <layerDef xml:id="layerDef-22" n="2" label="II"/>
                         </staffDef>
                      </staffGrp>
                      <staffDef xml:id="i14-staff1" n="16" lines="5" clef.shape="G" clef.line="2" meter.count="2" meter.unit="2">
@@ -200,8 +199,8 @@
                      <staffDef xml:id="i5-staff1" n="20" lines="5" clef.shape="G" clef.line="2" keysig="0" visible="false" meter.count="2" meter.unit="2">
                         <label xml:id="label-33">I Hom ın F</label>
                         <instrDef xml:id="instrDef-20"/>
-                        <layerDef xml:id="layerDef-24" n="1"><label xml:id="label-34">I</label></layerDef>
-                        <layerDef xml:id="layerDef-25" n="2"><label xml:id="label-35">II</label></layerDef>
+                        <layerDef xml:id="layerDef-23" n="1"><label xml:id="label-34">I</label></layerDef>
+                        <layerDef xml:id="layerDef-24" n="2"><label xml:id="label-35">II</label></layerDef>
                      </staffDef>
                   </staffGrp>
                </scoreDef>
