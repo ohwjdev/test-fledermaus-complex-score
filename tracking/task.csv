@@ -1,1 +1,9 @@
 task_id,subtask_id,fragment,locator,allowlist,blocklist,depends_on
+P0001,,sources/piece-01/score.mei,omr-layout,,,
+P0001,S0001,sources/piece-01/score.mei,omr-layout,,,
+T0001,,sources/piece-01/score.mei,surface-1,,,P0001
+T0001,S0001,sources/piece-01/score.mei,surface-1,,,
+T0002,,sources/piece-01/score.mei,surface-2,,,T0001
+T0002,S0001,sources/piece-01/score.mei,surface-2,,,
+T0003,,sources/piece-01/score.mei,surface-3,,,T0001
+T0003,S0001,sources/piece-01/score.mei,surface-3,,,
