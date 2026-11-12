@@ -1,0 +1,106 @@
+# =============================================================================
+# Let's Encode! — campaign configuration  (schema v3)
+# =============================================================================
+# This file documents the shape of config.yaml, which the Let's Encode app
+# writes at campaign creation (see lets-encode/src/lib/campaign-init.ts,
+# configToYaml). A campaign describes ONE physical source holding N pieces
+# (works); each piece is one MEI file at its own path and one group of tasks.
+# -----------------------------------------------------------------------------
+
+# Schema version. Bump only on a breaking change to the format.
+schema_version: 3
+
+# --- Campaign identity -------------------------------------------------------
+# Human-facing metadata. Fields tagged (→ MEI header) are also copied into each
+# piece's MEI <meiHead>.
+campaign:
+  name: "example-campaign"                    # the campaign's handle: repo name, registry slug and address at once
+  title: "REPLACE ME — campaign title"        # human-readable label
+  description: "One or two sentences describing the campaign."
+  instigator: "0"                             # organiser's numeric GitHub account id (login resolved for display)
+  repo_id: 0                                  # this repo's numeric GitHub id — the canonical, rename-proof reference
+  language: "en"                              # BCP-47 code; recorded only, not read
+  license: "CC-BY-4.0"                        # (→ MEI header / availability)
+
+# --- Automation --------------------------------------------------------------
+# Where the campaign's coordination logic lives. The campaign workflow that
+# .github/workflows/caller.yml calls reads this block from the BASE branch on
+# every run, checks out that repository at `ref`, and runs `path`. Upgrading a live
+# campaign is a one-line edit of `ref`.
+automation:
+  central_repository: "lets-encode/lets-encode" # owner/repo of the central automation code
+  ref: "main"                                   # branch of the instance that created the campaign; pin to a commit SHA for production releases
+  path: "scripts/coordinator.ts"                # entry point within that repository (the caller accepts only this value)
+
+# --- Source ------------------------------------------------------------------
+# The physical source the pieces were read from: its committed page images
+# (repo-relative paths; empty for a source without a facsimile) and its
+# bibliographic header (→ MEI header / source description).
+source:
+  kind: "facsimile"                           # 'facsimile' | 'mei-template' | 'physical-only'
+  images:
+    - "sources/img/01.jpg"
+    - "sources/img/02.jpg"
+  header:
+    title: "REPLACE ME — source title"
+    composer: ""
+    publisher: ""
+    date: ""
+  rights_acknowledged: "public-domain"        # which acknowledgement the instigator agreed to, for provenance
+
+# --- Pieces ------------------------------------------------------------------
+# The works within the source. Each piece has its own MEI at `path`
+# (sources/<piece-id>/score.mei) — the `fragment` its tasks address — and its
+# own header (→ MEI header). Implemented kinds:
+#   facsimile     : regions of the page images that volunteers encode; `zones`
+#                   lists the covered regions (surface = 1-based page number,
+#                   matching the page's <pb>)
+#   encoded       : an uploaded, already-notated score; no zones
+#   physical-only : transcribed from the physical source, no images; `pages`
+#                   (optional) is how many pages of the source it spans
+# Piece paths must be distinct: the coordinator resolves a submission by its
+# fragment path alone.
+pieces:
+  - id: "piece-1"
+    kind: "facsimile"
+    # preparation: "measure-detection"        # facsimile only: 'measure-detection' | 'omr' | 'omr-instruments'; unset = 'measure-detection'
+    path: "sources/piece-1/score.mei"
+    # encoding: "sources/piece-1/upload.mei"  # facsimile only, optional: the uploaded encoding the piece starts from
+    zones:
+      - { surface: 1, ulx: 0, uly: 0, lrx: 2000, lry: 1400 }
+      - { surface: 2, ulx: 0, uly: 0, lrx: 2000, lry: 1400 }
+    header:
+      title: "REPLACE ME — piece title"
+      composer: ""
+
+# --- Fragmentation -----------------------------------------------------------
+# How the campaign is divided into tasks: one group of tasks per piece. A
+# facsimile piece opens with a measure-correction pre-task (a layout
+# correction for the OMR preparations), an alignment pre-task when `encoding` is set, and a
+# score-setup pre-task (none for 'omr-instruments'), each depending on the one
+# before, and gets one encoding task per covered page, each depending on the
+# last pre-task; an encoded
+# piece gets one whole-file task; a physical-only piece gets per-page tasks
+# when `pages` is set, otherwise one whole-file task. Only 'by-piece' is
+# implemented.
+fragmentation:
+  strategy: "by-piece"
+
+# --- Validation --------------------------------------------------------------
+# IMPORTANT: validation here means human peer review — a SEPARATE step from
+# encoding, ideally done by several different people. It is NOT the machine
+# check: well-formed XML + MEI schema validity always run on every submission
+# and are not configured here; they gate a submission but do not count as a
+# "validation".
+validation:
+  required_validations: 1                     # validation cells (validate_status_1…n) per subtask
+  pass_threshold: 1                           # how many 'pass' outcomes complete a subtask
+  # allow_self_validation: true               # development/test campaigns only: lifts the
+  #                                           # no-self-validation and one-verdict-per-person rules
+
+# --- Locking -----------------------------------------------------------------
+# A claimed task or subtask is reserved in tracking/lock.csv. A claim ends
+# this many minutes after it was accepted; the task is then open again.
+locking:
+  stale_after_minutes: 1440
+  max_claims_per_person: 10                   # claims of any kind one person may hold at once

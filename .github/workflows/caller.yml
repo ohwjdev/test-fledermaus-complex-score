@@ -1,0 +1,22 @@
+name: Campaign automation
+
+# Forwards every event to the campaign workflow in lets-encode/lets-encode,
+# which reads the `automation:` block of config.yaml and runs the coordinator.
+on:
+  pull_request_target:
+    # No paths filter: an encoding completed without changes has no changed
+    # file, and the coordinator identifies an operation by its command
+    # envelope and head branch, leaving any other pull request alone.
+    types: [opened, reopened, synchronize, ready_for_review]
+  schedule:
+    - cron: '0 * * * *' # fallback cleanup; claims also reap expired locks lazily
+  workflow_dispatch: {} # manual reaper run (e.g. from the app)
+
+# A called workflow can use at most the permissions its caller grants.
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  run:
+    uses: lets-encode/lets-encode/.github/workflows/campaign.yml@main
