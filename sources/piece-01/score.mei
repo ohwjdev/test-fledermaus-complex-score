@@ -117,8 +117,8 @@
                         <layerDef xml:id="layerDef-6" n="1"><label xml:id="label-7">I</label></layerDef>
                         <layerDef xml:id="layerDef-7" n="2"><label xml:id="label-8">II</label></layerDef>
                      </staffDef>
-                     <staffDef xml:id="i4-staff1" n="5" lines="5" clef.shape="F" clef.line="4" keysig="4s" meter.count="2" meter.unit="2">
-                        <label xml:id="label-9">Fagott I</label>
+                     <staffDef xml:id="i20-staff1" n="5" lines="5" clef.shape="F" clef.line="4" keysig="4s" meter.count="2" meter.unit="2">
+                        <label xml:id="label-9">Fagott</label>
                         <instrDef xml:id="instrDef-5"/>
                         <layerDef xml:id="layerDef-8" n="1"><label xml:id="label-10">I</label></layerDef>
                         <layerDef xml:id="layerDef-9" n="2"><label xml:id="label-11">II</label></layerDef>
