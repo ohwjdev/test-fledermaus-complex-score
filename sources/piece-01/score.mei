@@ -132,8 +132,8 @@
                         <staffDef xml:id="i17-staff2" n="7" lines="5" clef.shape="G" clef.line="2" keysig="0" meter.count="2" meter.unit="2">
                            <label xml:id="label-15">Horn in F</label>
                            <instrDef xml:id="instrDef-7"/>
-                           <layerDef xml:id="layerDef-11" n="1"><label xml:id="label-16">I</label></layerDef>
-                           <layerDef xml:id="layerDef-12" n="2"><label xml:id="label-17">II</label></layerDef>
+                           <layerDef xml:id="layerDef-11" n="3"><label xml:id="label-16">III</label></layerDef>
+                           <layerDef xml:id="layerDef-12" n="4"><label xml:id="label-17">IV</label></layerDef>
                         </staffDef>
                      </staffGrp>
                      <staffDef xml:id="i7-staff1" n="8" lines="5" clef.shape="G" clef.line="2" keysig="0" meter.count="2" meter.unit="2">
