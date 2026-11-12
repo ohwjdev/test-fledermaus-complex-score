@@ -26,6 +26,13 @@
 					"parts": [
 						1
 					]
+				},
+				{
+					"id": "i1-3",
+					"parts": [
+						0,
+						1
+					]
 				}
 			]
 		},
@@ -302,10 +309,46 @@
 					"parts": []
 				}
 			]
+		},
+		{
+			"id": "i5",
+			"name": "I Hom ın F",
+			"abbr": "",
+			"grand": false,
+			"parts": [
+				{
+					"name": "I"
+				},
+				{
+					"name": "II"
+				}
+			],
+			"staves": [
+				{
+					"id": "i5-2",
+					"parts": [
+						0,
+						1
+					]
+				}
+			]
+		},
+		{
+			"id": "i2",
+			"name": "Oboe I!",
+			"abbr": "",
+			"grand": false,
+			"parts": [],
+			"staves": [
+				{
+					"id": "i2-1",
+					"parts": []
+				}
+			]
 		}
 	],
 	"groups": [],
-	"instrumentsFixed": false,
+	"instrumentsFixed": true,
 	"pages": [
 		{
 			"image": "../img/01.jpg",
@@ -588,151 +631,176 @@
 					"ulx": 257,
 					"uly": 238,
 					"lrx": 2339,
-					"lry": 302
+					"lry": 302,
+					"staff": "i1-1"
 				},
 				{
 					"ulx": 270,
 					"uly": 348,
 					"lrx": 2341,
-					"lry": 404
+					"lry": 404,
+					"staff": "i1-2"
 				},
 				{
 					"ulx": 255,
 					"uly": 435,
 					"lrx": 2323,
-					"lry": 505
+					"lry": 505,
+					"staff": "i16-2"
 				},
 				{
 					"ulx": 259,
 					"uly": 569,
 					"lrx": 2338,
-					"lry": 628
+					"lry": 628,
+					"staff": "i3-2"
 				},
 				{
 					"ulx": 251,
 					"uly": 690,
 					"lrx": 2334,
-					"lry": 748
+					"lry": 748,
+					"staff": "i4-2"
 				},
 				{
 					"ulx": 259,
 					"uly": 814,
 					"lrx": 2335,
-					"lry": 871
+					"lry": 871,
+					"staff": "i11-1"
 				},
 				{
 					"ulx": 263,
 					"uly": 926,
 					"lrx": 2342,
-					"lry": 985
+					"lry": 985,
+					"staff": "i5-2"
 				},
 				{
 					"ulx": 255,
 					"uly": 1046,
 					"lrx": 2328,
-					"lry": 1107
+					"lry": 1107,
+					"staff": "i18-2"
 				},
 				{
 					"ulx": 260,
 					"uly": 1175,
 					"lrx": 2336,
-					"lry": 1233
+					"lry": 1233,
+					"staff": "i8-2"
 				},
 				{
 					"ulx": 260,
 					"uly": 1294,
 					"lrx": 2342,
-					"lry": 1352
+					"lry": 1352,
+					"staff": "i9-1"
 				},
 				{
 					"ulx": 260,
 					"uly": 1454,
 					"lrx": 2340,
-					"lry": 1513
+					"lry": 1513,
+					"staff": "i10-1"
 				},
 				{
 					"ulx": 261,
 					"uly": 1565,
 					"lrx": 2334,
-					"lry": 1616
+					"lry": 1616,
+					"staff": "i13-2"
 				},
 				{
 					"ulx": 259,
 					"uly": 1672,
 					"lrx": 2338,
-					"lry": 1732
+					"lry": 1732,
+					"staff": "i14-1"
 				},
 				{
 					"ulx": 260,
 					"uly": 1781,
 					"lrx": 2340,
-					"lry": 1837
+					"lry": 1837,
+					"staff": "i15-1"
 				},
 				{
 					"ulx": 263,
 					"uly": 1878,
 					"lrx": 2336,
-					"lry": 1939
+					"lry": 1939,
+					"staff": "i19-1"
 				},
 				{
 					"ulx": 262,
 					"uly": 2154,
 					"lrx": 2340,
-					"lry": 2214
+					"lry": 2214,
+					"staff": "i1-1"
 				},
 				{
 					"ulx": 261,
 					"uly": 2270,
 					"lrx": 2327,
-					"lry": 2333
+					"lry": 2333,
+					"staff": "i2-1"
 				},
 				{
 					"ulx": 260,
 					"uly": 2363,
 					"lrx": 2338,
-					"lry": 2429
+					"lry": 2429,
+					"staff": "i3-2"
 				},
 				{
 					"ulx": 263,
 					"uly": 2483,
 					"lrx": 2335,
-					"lry": 2540
+					"lry": 2540,
+					"staff": "i4-2"
 				},
 				{
 					"ulx": 268,
 					"uly": 2591,
 					"lrx": 2341,
-					"lry": 2655
+					"lry": 2655,
+					"staff": "i5-2"
 				},
 				{
 					"ulx": 261,
 					"uly": 2751,
 					"lrx": 2336,
-					"lry": 2819
+					"lry": 2819,
+					"staff": "i13-1"
 				},
 				{
 					"ulx": 262,
 					"uly": 2843,
 					"lrx": 2337,
-					"lry": 2911
+					"lry": 2911,
+					"staff": "i13-2"
 				},
 				{
 					"ulx": 265,
 					"uly": 2968,
 					"lrx": 2336,
-					"lry": 3017
+					"lry": 3017,
+					"staff": "i14-1"
 				},
 				{
 					"ulx": 266,
 					"uly": 3086,
 					"lrx": 2335,
-					"lry": 3145
+					"lry": 3145,
+					"staff": "i15-1"
 				},
 				{
 					"ulx": 265,
 					"uly": 3195,
 					"lrx": 2335,
-					"lry": 3255
+					"lry": 3255,
+					"staff": "i19-1"
 				}
 			],
 			"grandstaves": []
@@ -818,139 +886,162 @@
 					"ulx": 265,
 					"uly": 257,
 					"lrx": 2336,
-					"lry": 321
+					"lry": 321,
+					"staff": "i1-1"
 				},
 				{
 					"ulx": 265,
 					"uly": 380,
 					"lrx": 2336,
-					"lry": 443
+					"lry": 443,
+					"staff": "i2-1"
 				},
 				{
 					"ulx": 260,
 					"uly": 500,
 					"lrx": 2344,
-					"lry": 563
+					"lry": 563,
+					"staff": "i3-2"
 				},
 				{
 					"ulx": 253,
 					"uly": 631,
 					"lrx": 2337,
-					"lry": 694
+					"lry": 694,
+					"staff": "i4-2"
 				},
 				{
 					"ulx": 267,
 					"uly": 757,
 					"lrx": 2338,
-					"lry": 826
+					"lry": 826,
+					"staff": "i5-2"
 				},
 				{
 					"ulx": 268,
 					"uly": 931,
 					"lrx": 2341,
-					"lry": 999
+					"lry": 999,
+					"staff": "i13-1"
 				},
 				{
 					"ulx": 264,
 					"uly": 1047,
 					"lrx": 2343,
-					"lry": 1111
+					"lry": 1111,
+					"staff": "i13-2"
 				},
 				{
 					"ulx": 265,
 					"uly": 1174,
 					"lrx": 2343,
-					"lry": 1238
+					"lry": 1238,
+					"staff": "i14-1"
 				},
 				{
 					"ulx": 266,
 					"uly": 1301,
 					"lrx": 2335,
-					"lry": 1364
+					"lry": 1364,
+					"staff": "i15-1"
 				},
 				{
 					"ulx": 266,
 					"uly": 1403,
 					"lrx": 2341,
-					"lry": 1468
+					"lry": 1468,
+					"staff": "i19-1"
 				},
 				{
 					"ulx": 254,
 					"uly": 1651,
 					"lrx": 2334,
-					"lry": 1715
+					"lry": 1715,
+					"staff": "i1-3"
 				},
 				{
 					"ulx": 259,
 					"uly": 1776,
 					"lrx": 2335,
-					"lry": 1839
+					"lry": 1839,
+					"staff": "i16-2"
 				},
 				{
 					"ulx": 255,
 					"uly": 1911,
 					"lrx": 2337,
-					"lry": 1977
+					"lry": 1977,
+					"staff": "i3-2"
 				},
 				{
 					"ulx": 257,
 					"uly": 2050,
 					"lrx": 2337,
-					"lry": 2114
+					"lry": 2114,
+					"staff": "i4-2"
 				},
 				{
 					"ulx": 256,
 					"uly": 2176,
 					"lrx": 2341,
-					"lry": 2241
+					"lry": 2241,
+					"staff": "i19-1"
 				},
 				{
 					"ulx": 263,
 					"uly": 2280,
 					"lrx": 2332,
-					"lry": 2347
+					"lry": 2347,
+					"staff": "i5-2"
 				},
 				{
 					"ulx": 261,
 					"uly": 2407,
 					"lrx": 2341,
-					"lry": 2471
+					"lry": 2471,
+					"staff": "i18-2"
 				},
 				{
 					"ulx": 271,
 					"uly": 2546,
 					"lrx": 2339,
-					"lry": 2610
+					"lry": 2610,
+					"staff": "i8-2"
 				},
 				{
 					"ulx": 256,
 					"uly": 2664,
 					"lrx": 2339,
-					"lry": 2728
+					"lry": 2728,
+					"staff": "i9-1"
 				},
 				{
 					"ulx": 262,
 					"uly": 2825,
 					"lrx": 2339,
-					"lry": 2890
+					"lry": 2890,
+					"staff": "i13-1"
 				},
 				{
 					"ulx": 271,
 					"uly": 2943,
 					"lrx": 2346,
-					"lry": 3008
+					"lry": 3008,
+					"staff": "i13-2"
 				},
 				{
 					"ulx": 265,
 					"uly": 3076,
 					"lrx": 2337,
-					"lry": 3138
+					"lry": 3138,
+					"staff": "i14-1"
 				},
 				{
 					"ulx": 279,
 					"uly": 3185,
 					"lrx": 2335,
-					"lry": 3251
+					"lry": 3251,
+					"staff": "i15-1"
 				}
 			],
 			"grandstaves": []
